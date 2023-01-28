@@ -1,0 +1,165 @@
+* {
+    font-family: Roboto;
+    max-width: 664px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.015em;
+}
+
+input {
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    padding: 0 0 0 17px;
+    height: 48px;
+}
+
+.form__input_name {
+    width: 643px;
+}
+
+input::placeholder {
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+}
+
+.form__subtask-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 0;
+    margin-top: 32px;
+}
+
+.form__subtask-container-info {
+    margin-top: 32px;
+}
+
+.form__p-subtask {
+    margin: 0;
+}
+
+.form__subtask-button {
+    width: 70px;
+    height: 40px;
+    background: #000000;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 100;
+    margin-left: 25px;
+}
+
+.form__subtask-info {
+    display: flex;
+    margin: 20px 0 8px 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.form__subtask-p1 {
+    margin: 0 0 0 195px;
+}
+
+.form__subtask-p2 {
+    margin: 0 0 0 245px;
+}
+
+.form__subtask-p3 {
+    margin: 0 0 0 55px;
+}
+
+.form__subtask-input {
+    width: 452px;
+
+}
+
+.form__subtask-input_time {
+    width: 56px;
+    margin-left: 20px;
+    padding: 0 0 0 17px;
+}
+
+.form__subtask-delete-button {
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    width: 70px;
+    height: 40px;
+    margin-left: 15px;
+}
+
+.form__save-button {
+    width: 660px;
+    height: 48px;
+    border: 2px solid #000000;
+    border-radius: 6px;
+    background-color: #fff;
+    margin-top: 18px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.form__new-button {
+    width: 660px;
+    height: 48px;
+    border: 2px solid #000000;
+    border-radius: 6px;
+    background-color: #000;
+    color: #fff;
+    margin-top: 18px;
+    font-weight: 900;
+}
+
+.subtask-title {
+    width: 452px;
+    height: 31px;
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    /*padding-left: 17px;*/
+    /*padding-top: 20px;*/
+    padding: 17px 0 0 17px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 18px;
+    float: left;
+}
+
+.subtask-time {
+    border: 2px solid #000;
+    width: 56px;
+    height: 31px;
+    padding: 17px 0 0 17px;
+    float: left;
+    margin-top: 18px;
+    margin-left: 24px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+
+}
+
+.subtask-button {
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    width: 70px;
+    height: 40px;
+    margin-left: 15px;
+    margin-top: 24px;
+    float: right;
+}

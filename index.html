@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task list</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto:wght@100;400;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <form action="" class="form">
+        <div>
+            <h2 class="form__p">Task name</h2>
+            <input class="form__input_name" id="taskNameInput" type="text" placeholder="Enter task name">
+            <input id="taskId" type="hidden">
+        </div>
+        <div class="form__subtask-container">
+            <h2 class="form__p-subtask">Subtasks</h2>
+            <button class="form__subtask-button" id="addNewSubtaskButton">+</button>
+        </div>
+        <div class="form__subtask-info">
+            <p class="form__subtask-p1">Description</p>
+            <p class="form__subtask-p2">Time</p>
+            <p class="form__subtask-p3">Button</p>
+        </div>
+        <div id="resultContainer" class="form__subtask-container">
+        </div>
+        <div id="subTaskTemplate" style="display: none;">
+            <div class="form__subtask-container-info">
+                <input type="hidden" class="form__subtask-id">
+                <input class="form__subtask-input" type="text" placeholder="New task">
+                <input class="form__subtask-input_time" type="number" placeholder="0">
+                <button class="form__subtask-delete-button">
+                    <object data="./icons/Cross.svg" type="image/svg+xml"></object>
+                </button>
+            </div>
+        </div>
+        <button id="saveInLocalStorageButton" class="form__save-button">SAVE TASK IN LocalStorage</button>
+        <button id="newTaskButton" class="form__new-button">CREATE NEW TASK</button>
+    </form>
+    <h2>Task list</h2>
+    <div id="tasklist-task-template" style="display: none;">
+        <div class="tasklist-task">
+            <div class="tasklist-task-name"></div>
+            <div class="tasklist-task-subtask-container"></div>
+            <button class="tasklist-task-load">Load</div>
+        </div>
+    </div>
+    <div id="tasklist-subtask-template" style="display: none;">
+        <div class="tasklist-task-subtask">
+            <div class="tasklist-task-subtask-name"></div>
+            <div class="tasklist-task-subtask-hours"></div>
+        </div>
+    </div>
+    <div id="tasklist">
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
